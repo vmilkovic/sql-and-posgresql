@@ -1,0 +1,29 @@
+-- INTERSECT RETURS DUPLICATE ROWS FROM BOTH QUERIES
+(
+ 	SELECT *
+    FROM products
+    ORDER BY price DESC
+    LIMIT 4
+)
+INTERSECT
+(
+    SELECT *
+    FROM products
+    ORDER BY price / weight DESC
+    LIMIT 4
+)
+
+-- INTERSECT ALL RETURS DUPLICATE ROWS ON EATHER QUERIES
+(
+ 	SELECT *
+    FROM products
+    ORDER BY price DESC
+    LIMIT 4
+)
+INTERSECT ALL
+(
+    SELECT *
+    FROM products
+    ORDER BY price / weight DESC
+    LIMIT 4
+)

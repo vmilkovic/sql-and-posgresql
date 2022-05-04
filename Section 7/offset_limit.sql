@@ -1,0 +1,23 @@
+SELECT *
+FROM users
+OFFSET 40;
+
+SELECT *
+FROM users
+LIMIT 50;
+
+SELECT *
+FROM users
+OFFSET 3 LIMIT 2;
+
+SELECT *
+FROM products
+ORDER BY price DESC
+LIMIT 5
+OFFSET 1;
+
+SELECT name
+FROM phones
+ORDER BY price DESC
+LIMIT 2
+OFFSET 1
